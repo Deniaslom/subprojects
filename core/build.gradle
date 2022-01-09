@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.clevertec.task.gradle-2'
+version '1.3.5'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation 'ru.clevertec.task.gradle:utils:1.3.5'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
